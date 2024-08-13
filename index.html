@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .cardapio, .carrinho { margin: 20px; }
-        .item { margin: 10px 0; }
-        .carrinho-item { display: flex; justify-content: space-between; }
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .cardapio,
+        .carrinho {
+            margin: 20px;
+        }
+
+        .item {
+            margin: 10px 0;
+        }
+
+        .carrinho-item {
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="cardapio">
@@ -91,7 +106,7 @@
             const troco = document.getElementById('troco').value;
             const pagamento = document.getElementById('pagamento').value;
 
-            const mensagem = `*Pedido:\n${carrinho.map(item => `${item.nome} - R$${item.preco}`).join('\n')}\n <br> *Total: R$*${total}\n <br> *Entrega em:* <br> *Rua:* ${rua} <br> *Número:* ${numero} <br> *Bairro:* ${bairro} <br> *Cidade:* ${cidade} *CEP:* ${cep}\n <br> *Pagamento:* ${pagamento}`;
+            const mensagem = `Pedido:\n${carrinho.map(item => `${item.nome} - R$${item.preco}`).join('\n')}\n*Total:* R$${total}\n <br> *Entrega em:*\n*Rua:*${rua}\n*Número:*${numero}\n*Bairro:*${bairro}\n*Cidade:*${cidade}\n*CEP:*${cep}\n*Pagamento:*${pagamento}\n*Precisa de troco? Valor:*${troco}`;
             const numeroWhatsApp = '5511937457836'; // Substitua pelo número desejado
             const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
             window.open(url);
@@ -99,4 +114,5 @@
     </script>
 
 </body>
+
 </html>
