@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .cardapio, .carrinho { margin: 20px; }
+        .item { margin: 10px 0; }
+        .carrinho-item { display: flex; justify-content: space-between; }
+    </style>
+</head>
+<body>
+
+    <div class="cardapio">
+        <h1>Cardápio</h1>
+        <div class="item">
+            <span>Produto 1 - R$10</span>
+            <button onclick="adicionarItem('pizza', 10)">Adicionar</button>
+        </div>
+        <div class="item">
+            <span>Produto 2 - R$15</span>
+            <button onclick="adicionarItem('Produto 2', 15)">Adicionar</button>
+        </div>
+        <div class="item">
+            <span>Produto 3 - R$20</span>
+            <button onclick="adicionarItem('Produto 3', 20)">Adicionar</button>
+        </div>
+    </div>
+
+    <div class="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <div id="listaCarrinho"></div>
+        <div id="totalCarrinho"></div>
+        <button onclick="enviarWhatsApp()">Enviar Pedido</button>
+    </div>
+
+    <div class="entrega">
+        <h2>Formulário de Entrega</h2>
+        <input type="text" id="cidade" placeholder="Cidade" required>
+        <input type="text" id="bairro" placeholder="Bairro" required>
+        <input type="text" id="cep" placeholder="CEP" required>
+        <input type="text" id="rua" placeholder="Rua" required>
+        <input type="text" id="numero" placeholder="Número" required>
+        <input type="text" id="troco" placeholder="Precisa de troco. Quantos?">
+        <select id="pagamento">
+            <option value="dinheiro">Dinheiro</option>
+            <option value="cartao_credito">Cartão de Crédito</option>
+            <option value="cartao_debito">Cartão de Débito</option>
+            <option value="pix">Pix</option>
+        </select>
+    </div>
+
+    <script>
+        let carrinho = [];
+        let total = 0;
+
+        function adicionarItem(nome, preco) {
+            carrinho.push({ nome, preco });
+            total += preco;
+            atualizarCarrinho();
+        }
+
+        function removerItem(index) {
+            total -= carrinho[index].preco;
+            carrinho.splice(index, 1);
+            atualizarCarrinho();
+        }
+
+        function atualizarCarrinho() {
+            const listaCarrinho = document.getElementById('listaCarrinho');
+            listaCarrinho.innerHTML = '';
+            carrinho.forEach((item, index) => {
+                listaCarrinho.innerHTML += `
+                    <div class="carrinho-item">
+                        <span>${item.nome} - R$${item.preco}</span>
+                        <button onclick="removerItem(${index})">Remover</button>
+                    </div>
+                `;
+            });
+            document.getElementById('totalCarrinho').innerText = `Total: R$${total}`;
+        }
+
+        function enviarWhatsApp() {
+            const cidade = document.getElementById('cidade').value;
+            const bairro = document.getElementById('bairro').value;
+            const cep = document.getElementById('cep').value;
+            const rua = document.getElementById('rua').value;
+            const numero = document.getElementById('numero').value;
+            const troco = document.getElementById('troco').value;
+            const pagamento = document.getElementById('pagamento').value;
+
+            const mensagem = `Pedido:\n${carrinho.map(item => `${item.nome} - R$${item.preco}`).join('\n')}\nTotal: R$${total}\nEntrega em: ${rua}, ${numero}, ${bairro}, ${cidade}, ${cep}\nPagamento: ${pagamento}`;
+            const numeroWhatsApp = '5511937457836'; // Substitua pelo número desejado
+            const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+            window.open(url);
+        }
+    </script>
+
+</body>
+</html>
