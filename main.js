@@ -18,7 +18,7 @@ function atualizarCarrinho() {
     listaCarrinho.innerHTML = '';
     carrinho.forEach((item, index) => {
         listaCarrinho.innerHTML += `
-            <div class="carrinho-item">
+            <div class="carrinho-item" >
                 <span>${item.nome} - R$${item.preco}</span>
                 <button class="remover" onclick="removerItem(${index})">Remover</button>
             </div>
