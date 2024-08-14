@@ -1,0 +1,19 @@
+header {
+    text-align: center;
+    background-color: red;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    padding: auto;
+}
+
+header img {
+    width: 60px;
+    margin-top: 1rem;
+    border: solid yellow 2px;
+    border-radius: 44px;
+
+}

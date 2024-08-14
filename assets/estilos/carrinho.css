@@ -1,0 +1,31 @@
+.carrinho {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.carrinho-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: red;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.carrinho-item .remover{
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#totalCarrinho{
+    color: red;
+    text-transform: uppercase;
+    background-color: white;
+    
+    padding: 10px;
+    border-radius: 10px;
+}
