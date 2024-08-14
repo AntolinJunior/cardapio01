@@ -29,6 +29,7 @@ function atualizarCarrinho() {
 }
 
 function enviarWhatsApp() {
+    const nome = document.getElementById('nome').value;
     const cidade = document.getElementById('cidade').value;
     const bairro = document.getElementById('bairro').value;
     const cep = document.getElementById('cep').value;
@@ -37,8 +38,8 @@ function enviarWhatsApp() {
     const troco = document.getElementById('troco').value;
     const pagamento = document.getElementById('pagamento').value;
 
-    const mensagem = `Pedido:\n${carrinho.map(item => `${item.nome} - R$${item.preco}`).join('\n')}\n*Entrega em:*\n*Rua:* ${rua}\n*Número:* ${numero}\n*Bairro:* ${bairro}\n*Cidade:* ${cidade}\n*CEP:* ${cep}\n*Pagamento:* ${pagamento}\n*Precisa de troco? Valor:* ${troco}\n*Total:* R$${total}\n`;
-    const numeroWhatsApp = '5511937457836'; // Substitua pelo número desejado
+    const mensagem = `Pedido:\n${carrinho.map(item => `${item.nome} - R$${item.preco}`).join('\n')}\n *Nome:* ${nome}\n*Entrega em:*\n*Rua:* ${rua}\n*Número:* ${numero}\n*Bairro:* ${bairro}\n*Cidade:* ${cidade}\n*CEP:* ${cep}\n*Pagamento:* ${pagamento}\n*Precisa de troco? Valor:* ${troco}\n*Total:* R$${total}\n`;
+    const numeroWhatsApp = '5511999105343'; // Substitua pelo número desejado
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
     window.open(url);
 }
