@@ -6,41 +6,47 @@
     text-transform: uppercase;
 }
 
-.alinhamentoScrollPag{
-    margin-bottom: 50px;
+.alinhamentoScrollPag {
+    margin-bottom: 250px;
 }
 
-.cardapio h1{
+.cardapio h1 {
     padding-top: 30px;
     margin-top: 90px;
     color: yellow;
     border-top: solid 2px;
-}
-.cardapio span{
-    font-size: 20px;
-}
-.cardapio p{
-    font-size: 12px;
+    font-size: 100px;
 }
 
-.cardapio .botaoAdicionar{
-    width: 50%;
-    border-radius: 10px;
-    height: 50px;
+.cardapio span {
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+.cardapio p {
+    font-size: 50px;
+    margin: 0;
+}
+
+.cardapio .botaoAdicionar {
+    width: 60%;
+    font-size: 30px;
+    border-radius: 30px;
+    height: 120px;
     font-weight: bolder;
     box-shadow: 0px 0px 10px 1px yellow;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+   
 }
 
 
-.cardapio .botaoAdicionar:hover{
+.cardapio .botaoAdicionar:hover {
     background-color: orangered;
     font-weight: bold;
 }
 
-.cardapio .botaoAdicionar:active{
+.cardapio .botaoAdicionar:active {
     color: yellow;
 }

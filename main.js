@@ -42,8 +42,9 @@ function enviarWhatsApp() {
     const numero = document.getElementById('numero').value;
     const troco = document.getElementById('troco').value;
     const pagamento = document.getElementById('pagamento').value;
+    const retirar = document.getElementById('retirar').value;
 
-    const mensagem = `Pedido:\n${carrinho.map(item => `${item.nome} - R$${item.preco}`).join('\n')}\n*Total da compra sem taxa de entrega:* R$${total.toFixed(2)}\n*Nome:* ${nome}\n*Entrega em:*\n*Rua:* ${rua}\n*Número:* ${numero}\n*Bairro:* ${bairro}\n*Cidade:* ${cidade}\n*CEP:* ${cep}\n*Pagamento:* ${pagamento}\n*Precisa de troco? Valor:* ${troco}`;
+    const mensagem = `Pedido:\n${carrinho.map(item => `${item.nome} - R$${item.preco}`).join('\n')}\n*Total da compra sem taxa de entrega:* R$${total.toFixed(2)}\n*Nome:* ${nome}\n*Entrega em:*\n*Rua:* ${rua}\n*Número:* ${numero}\n*Bairro:* ${bairro}\n*Cidade:* ${cidade}\n*CEP:* ${cep}\n*Pagamento:* ${pagamento}\n*Precisa de troco? Valor:* ${troco}\n*Vai retirar o pedido:* ${retirar}`;
     const numeroWhatsApp = '5511968559541'; // Substitua pelo número desejado
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
     window.open(url);

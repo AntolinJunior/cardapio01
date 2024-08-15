@@ -6,47 +6,49 @@
     flex-direction: column;
     gap: 15px;
     text-align: center;
-    
+
 }
 
-.carrinho h2{
+.carrinho h2 {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 100px;
     letter-spacing: 3px;
     margin-top: 60px;
 }
 
 .carrinho-item {
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px ;
+ 
     border-radius: 10px;
     align-items: center;
     margin-top: 10px;
 }
 
-.carrinho-item .remover{
+.carrinho-item .remover {
     background-color: red;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 50px 5px black;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
     text-transform: uppercase;
     letter-spacing: 4px;
     width: 70vw;
     font-weight: bolder;
-    font-size: 16px;
-    
-    
+    font-size: 50px;
+
+
 }
 
-#totalCarrinho{
+#totalCarrinho {
     color: white;
     text-transform: uppercase;
     padding: 10px;
     border-radius: 10px;
     font-weight: bold;
     letter-spacing: 2px;
-    
+    font-size: 50px;
+
 }

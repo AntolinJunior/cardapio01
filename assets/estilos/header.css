@@ -8,6 +8,12 @@ header {
     border-bottom-right-radius: 5px;
     box-shadow: 1px 1px 10px black;
     padding: auto;
+    font-size: 50px;
+}
+
+header p{
+    margin-bottom: 10px;
+    font-size: 45px;
 }
 
 header img {
@@ -18,37 +24,41 @@ header img {
 
 }
 
-header ul{
-    background-color:var(--cor-lista-superior);
+header ul {
+    background-color: var(--cor-lista-superior);
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
     margin: 10px 0px 0px 0px;
     padding: 15px;
-    
-    
+    height: 100px;
+    align-items: center;
+   
+
+
 
 }
 
-header li{
+header li {
     list-style: none;
-    
+
+
 }
 
-header a{
+header a {
     text-decoration: none;
     text-transform: uppercase;
     padding: 20px;
-  
+    font-size: 60px;
+
     color: white;
-    
-    
+
+
 }
 
-header a:hover{
+header a:hover {
     background-color: rgb(246, 255, 0);
     color: orangered;
     border-radius: 150px;
-    
-}
 
+}

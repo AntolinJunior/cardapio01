@@ -10,34 +10,36 @@ footer {
 
 
 
-footer p{
-    font-size: 10px;
+footer p {
+    font-size: 20px;
     letter-spacing: 3px;
 }
 
-footer a{
+footer a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 40px;
+    color: white;
 }
 
-footer i{
-    font-size: 30px;
+footer i {
+    font-size: 100px;
     color: var(--cor-carrinho);
     margin-bottom: 5px;
+    margin-top: 30px;
 }
 
-footer .displayCarrinho{
+footer .displayCarrinho {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  
+
     margin-top: 5px;
 }
 
-footer .displayCarrinhoInfo{
+footer .displayCarrinhoInfo {
     font-size: 12px;
     color: var(--cor-display-info-carrinho-footer);
     letter-spacing: 2px;

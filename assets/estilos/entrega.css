@@ -6,40 +6,49 @@
     text-align: center;
     gap: 10px;
     padding: 1rem;
-    border-radius: 20px;
-    margin: 1rem;
-    margin-bottom: 100px;
+    border-radius: 50px;
+    margin: 0rem 4rem 0rem 4rem;
+
+
+}
+
+.entrega h2 {
+    font-size: 70px;
+    margin-top: 100px;
 
 }
 
 
-.entrega #pagamento {
+.entrega #pagamento, #retirar {
     text-align: center;
     padding: 5px;
     background-color: transparent;
     border: solid 1px;
     border-radius: 8px;
-    height: 30px;
+    height: 100px;
+    width: 80%;
     outline: none;
+    font-size: 30px;
+    margin-top: 10px;
 
 }
 
 .entrega input {
     color: white;
-    text-align: center;
-    padding: 5px;
     background-color: transparent;
-    border: solid 1px;
-    border-radius: 8px;
-    height: 30px;
+    width: 80%;
     outline: none;
+    text-align: center;
+    height: 50px;
+    padding-top: 15px;
+    font-size: 40px;
+    border-radius: 10px;
+    
+    
 }
 
-.entrega #pagamento{
-    margin-top: 10px;
-}
-
-.entrega #pagamento, input:hover {
+.entrega #pagamento, #retirar,
+input:hover {
     background-color: white;
     color: black;
 }
@@ -47,21 +56,22 @@
 
 
 .entrega input::placeholder {
-    color: black;
-    outline: none;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 40px;
     letter-spacing: 1px;
 }
 
-
+.entrega label {
+    font-size: 40px;
+    margin: 10px;
+}
 
 .entrega .enviar {
     width: 70%;
-    height: 50px;
+    height: 100px;
     border-radius: 50px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    font-size: 45px;
     font-weight: bold;
-    margin-top: 15px;
+    margin-top: 30px;
 }
