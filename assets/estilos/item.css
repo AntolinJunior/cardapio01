@@ -7,3 +7,10 @@
     gap: 1rem;
 
 }
+
+.item mark{
+    border-radius: 10px;
+    line-height: 50px;
+    padding: 10px;
+    
+}

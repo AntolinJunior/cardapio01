@@ -1,6 +1,6 @@
 header {
     text-align: center;
-    background-color: red;
+    background-color: var(--cor-header-e-footer);
     top: 0;
     position: fixed;
     width: 100%;
@@ -17,3 +17,38 @@ header img {
     border-radius: 44px;
 
 }
+
+header ul{
+    background-color:var(--cor-lista-superior);
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 10px 0px 0px 0px;
+    padding: 15px;
+    
+    
+
+}
+
+header li{
+    list-style: none;
+    
+}
+
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+  
+    color: white;
+    
+    
+}
+
+header a:hover{
+    background-color: rgb(246, 255, 0);
+    color: orangered;
+    border-radius: 150px;
+    
+}
+

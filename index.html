@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/estilos/item.css">
     <link rel="stylesheet" href="assets/estilos/entrega.css">
     <link rel="stylesheet" href="assets/estilos/header.css">
+    <link rel="stylesheet" href="assets/estilos/variaveis.css">
+    <link rel="stylesheet" href="assets/estilos/footer.css">
     <title>Cardápio</title>
 </head>
 
@@ -18,46 +20,296 @@
 <body>
     <header>
         <p>Recanto`s <sup>&copy;</sup> pizzaria e hamburgueria</p>
+        <ul>
+            <li><a href="#pizza">Pizza</a></li>
+            <li><a href="#pizzaBrotinho">Pizza\Brotinho</a></li>
+            <li><a href="#pizzaDoce">Pizza\Doce</a></li>
+            <li><a href="#hamburguer">Hambúrguer</a></li>
+            <li><a href="#hamburguerArtesanal">Hambúrguer\Artesanal</a></li>
+            <li><a href="#hamburguerCombos">Hambúrguer\Combos</a></li>
+            <li><a href="#sorvete">Sorvete</a></li>
+            <li><a href="#sorvetePote">Sorvete\Pote</a></li>
+            <li><a href="#acai">Açaí</a></li>
+            <li><a href="#barcaAcai">Barca\Açaí</a></li>
+            <li><a href="#marmitex">Marmitex</a></li>
+        </ul>
+
     </header>
 
     <div class="geral">
 
 
         <div class="cardapio">
-            <h1 id="pizza">Pizza</h1>
+
+            <div class="alinhamentoScrollPag" id="pizza"></div>
+            <h1>Pizza</h1>
+
             <div class="item">
-                <span>2 Queijos - R$42,90</span>
-                <p>mussarela, frango desfiado e quejo</p>
-                <button class="botaoAdicionar" onclick="adicionarItem('2 queijos', 10)">Adicionar Item</button>
-            </div>
-            <div class="item">
-                <span>2 Queijos - R$42,90</span>
-                <p>mussarela, frango desfiado e quejo</p>
-                <button class="botaoAdicionar" onclick="adicionarItem('2 queijos', 10)">Adicionar Item</button>
-            </div>
-            <div class="item">
-                <span>2 Queijos - R$42,90</span>
-                <p>mussarela, frango desfiado e quejo</p>
-                <button class="botaoAdicionar" onclick="adicionarItem('2 queijos', 10)">Adicionar Item</button>
+                <span>2 Queijos<br><mark>R$42,90</mark></span>
+                <p>mussarela e catupiry</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('2 queijos', 42.90)">Adicionar Item</button>
             </div>
 
+            <div class="item">
+                <span>A moda da casa<br><mark>R$44,90</mark></span>
+                <p>mussarela, presunto, palmito e ervilha</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('A moda da casa', 44.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Ariane<br> <mark>R$47,90</mark></span>
+                <p>mussarela, presunto, bacon, alho e catupiry</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Ariane', 47.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Baiacatu<br><mark>R$45,90</mark></span>
+                <p>calabresa moída e catupiry</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Baiacatu', 45.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Baiana<br><mark>R$36,90</mark></span>
+                <p>calabresa fatiada, ovo, molho de pimenta e cebola</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Baiana', 36.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Bauru<br><mark>R$42,90</mark></span>
+                <p>mussarela, presunto e tomate</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Bauru', 42.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Bacon<br><mark>R$42,90</mark></span>
+                <p>mussarela, cebola roxa e bacon</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Bacon', 42.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Brócolis<br><mark>R$41,90</mark></span>
+                <p>brócolis, mussarela, milho, ervilha e cebola</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Brócolis', 41.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Caipira<br><mark>R$47,90</mark></span>
+                <p>frango desfiado, milho e mussarela</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Caipira', 47.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Calabresa<br><mark>R$29,90</mark></span>
+                <p>calabresa fatiada e cebola</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Calabresa', 29.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Frango com bacon<br><mark>R$47,90</mark></span>
+                <p>frango desfiado, mussarela e bacon</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Frango com bacon', 47.90)">Adicionar
+                    Item</button>
+            </div>
+
+            <div class="item">
+                <span>Frango com catupiry<br><mark>R$38,90</mark></span>
+                <p>frango desfiado e catupiry</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Frango com catupiry', 38.90)">Adicionar
+                    Item</button>
+            </div>
+
+            <div class="item">
+                <span>Mussarela<br><mark>R$29,90</mark></span>
+                <p>mussarela e tomate</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Mussarela', 29.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Palmito<br><mark>R$48,90</mark></span>
+                <p>palmito, mussarela e cebola</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Palmito', 48.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Portuguesa<br><mark>R$44,90</mark></span>
+                <p>mussarela, presunto, ovo, ervilha e cebola</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Portuguesa', 44.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Siciliana<br><mark>R$42,90</mark></span>
+                <p>mussarela, champignion e bacon</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Siciliana', 42.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Toscana<br><mark>R$47,90</mark></span>
+                <p>mussarela, calabresa e cebola</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Toscana', 47.90)">Adicionar Item</button>
+            </div>
+
+            <div class="alinhamentoScrollPag" id="pizzaBrotinho"></div>
+            <h1>Pizza Brotinho</h1>
+
+            <div class="item">
+                <span>mussarela ou calabresa<br><mark>R$19,90</mark></span>
+                <p></p>
+                <button class="botaoAdicionar"
+                    onclick="adicionarItem('Brotinho mussarela ou calabresa', 19.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Brotinho de Brigadeiro<br><mark>R$19,90</mark></span>
+                <p>chocolate ao leite, granulado em flocos</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Brotinho de Brigadeiro', 19.90)">Adicionar
+                    Item</button>
+            </div>
+
+            <div class="alinhamentoScrollPag" id="pizzaDoce"></div>
+            <h1>Pizza Doce</h1>
+
+            <div class="item">
+                <span>Morango<br><mark>R$48,90</mark></span>
+                <p>chocolate ao leite, morango e leite condensado</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Morango', 48.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>MM`s<br><mark>R$49,90</mark></span>
+                <p>chocolate ao leite, mm`s, leite condensado</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('MM`s', 49.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Romeu e Julieta<br><mark>R$44,90</mark></span>
+                <p>queijo, mussarela e goiabada</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Romeu e Julieta', 44.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Nutella<br><mark>R$65,90</mark></span>
+                <p>nutella, morango, leite condensado</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Nutella', 65.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Choco duo<br><mark>R$49,90</mark></span>
+                <p>chocolate ao leite, e chocolate branco</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Choco duo', 49.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Prestígio<br><mark>R$44,90</mark></span>
+                <p>chocolate ao leite, coco ralado e leite condensado</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Prestígio', 44.90)">Adicionar Item</button>
+            </div>
+
+            <div class="item">
+                <span>Brigadeiro<br><mark>R$29,90</mark></span>
+                <p>chocolate ao leite e granulado em flocos</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Brigadeiro', 29.90)">Adicionar Item</button>
+            </div>
+
+            <div class="alinhamentoScrollPag" id="hamburguer"></div>
+            <h1>Hambúrguer</h1>
+
+            <div class="item">
+                <span>Morango<br><mark>R$48,90</mark></span>
+                <p>chocolate ao leite, morango e leite condensado</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Morango', 48.90)">Adicionar Item</button>
+            </div>
+
+            <div class="alinhamentoScrollPag" id="hamburguerArtesanal"></div>
+            <h1>Hambúrguer Artesanal</h1>
+
+            <div class="item">
+                <span>Morango<br><mark>R$48,90</mark></span>
+                <p>chocolate ao leite, morango e leite condensado</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Morango', 48.90)">Adicionar Item</button>
+            </div>
+
+            <div class="alinhamentoScrollPag" id="hamburguerCombos"></div>
+            <h1>Hambúrguer Combos</h1>
+
+            <div class="item">
+                <span>Morango<br><mark>R$48,90</mark></span>
+                <p>chocolate ao leite, morango e leite condensado</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Morango', 48.90)">Adicionar Item</button>
+            </div>
+
+            <div class="alinhamentoScrollPag" id="sorvete"></div>
+            <h1>Sorvete</h1>
+
+            <div class="item">
+                <span>Morango<br><mark>R$48,90</mark></span>
+                <p>chocolate ao leite, morango e leite condensado</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Morango', 48.90)">Adicionar Item</button>
+            </div>
+
+            <div class="alinhamentoScrollPag" id="sorvetePote"></div>
+            <h1>Sorvete Pote</h1>
+
+            <div class="item">
+                <span>Morango<br><mark>R$48,90</mark></span>
+                <p>chocolate ao leite, morango e leite condensado</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Morango', 48.90)">Adicionar Item</button>
+            </div>
+
+            <div class="alinhamentoScrollPag" id="acai"></div>
+            <h1>Açaí</h1>
+
+            <div class="item">
+                <span>Morango<br><mark>R$48,90</mark></span>
+                <p>chocolate ao leite, morango e leite condensado</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Morango', 48.90)">Adicionar Item</button>
+            </div>
+
+            <div class="alinhamentoScrollPag" id="barcaAcai"></div>
+            <h1>Barca Açaí</h1>
+
+            <div class="item">
+                <span>Morango<br><mark>R$48,90</mark></span>
+                <p>chocolate ao leite, morango e leite condensado</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Morango', 48.90)">Adicionar Item</button>
+            </div>
+
+            <div class="alinhamentoScrollPag" id="marmitex"></div>
+            <h1>Marmitex</h1>
+
+            <div class="item">
+                <span>Morango<br><mark>R$48,90</mark></span>
+                <p>chocolate ao leite, morango e leite condensado</p>
+                <button class="botaoAdicionar" onclick="adicionarItem('Morango', 48.90)">Adicionar Item</button>
+            </div>
+
+            <div class="alinhamentoScrollPag" id="carrinho"></div>
 
             <div class="entrega">
-
+           
                 <div class="carrinho">
+                
                     <h2>Carrinho</h2>
+                    <div class="displayCarrinhoInfo" id="itensCarrinho"></div>
                     <div id="totalCarrinho"></div>
                     <div id="listaCarrinho"></div>
                 </div>
 
                 <h2>Formulário de Entrega</h2>
+                <label for="nome">Nome:</label>
                 <input type="text" id="nome" placeholder="Nome" required>
+                <label for="cidade">Cidade:</label>
                 <input type="text" id="cidade" placeholder="Cidade" required>
+                <label for="bairro">Bairro:</label>
                 <input type="text" id="bairro" placeholder="Bairro" required>
-                <input type="number" id="cep" placeholder="CEP" required>
+                <label for="cep">CEP:</label>
+                <input type="number" id="cep" placeholder="00000-00" required>
+                <label for="rua">Rua:</label>
                 <input type="text" id="rua" placeholder="Rua" required>
+                <label for="numero">Número residência:</label>
                 <input type="number" id="numero" placeholder="Número da residência" required>
-                <input type="number" id="troco" placeholder="Precisa de troco. Valor?">
+                <label for="troco">Precisa de troco?</label>
+                <input type="number" id="troco" placeholder="Digite o valor">
+                <label for="pagamento">Pagamento:</label>
                 <select id="pagamento">
                     <option value="dinheiro">Dinheiro</option>
                     <option value="cartao_credito">Cartão de Crédito</option>
@@ -73,13 +325,19 @@
 
 
         </div>
-        <footer
-            style="position: fixed; bottom: 0; width: 100vw; background-color: red; box-shadow: 0px -5px 10px black;left: 0;">
-            <span>Recanto`s <sup>&copy;</sup> 2024</span>
-            <p style="font-size: 12px;">Desenvolvido por Antolin A. Junior</p>
+        <footer>
+           
+
+            <div class="displayCarrinho">
+                <a href="#carrinho"><i class="fa-solid fa-cart-shopping"></i>Carrinho</a>
+                <a href="#"><i class="fa-solid fa-map-location-dot"></i>Entrega</a>
+            </div>
+
+            <p>Desenvolvido <sup>&copy;</sup> 2024 por Antolin A. Junior</p>
         </footer>
 
         <script src="main.js"></script>
+        <script src="https://kit.fontawesome.com/f962f4c5a7.js" crossorigin="anonymous"></script>
 
 </body>
 
