@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
     <link rel="stylesheet" href="assets/estilos/body.css">
     <link rel="stylesheet" href="assets/estilos/geral.css">
     <link rel="stylesheet" href="assets/estilos/cardapio.css">
@@ -16,10 +16,14 @@
     <title>Cardápio</title>
 </head>
 
-
 <body>
     <header>
         <p>Recanto`s <sup>&copy;</sup> pizzaria e hamburgueria</p>
+        <div style="display: flex; align-items: center; justify-content: center;margin: 0; padding: 0;" class="flexCar">
+            <div class="displayCarrinhoInfo" id="itensCarrinho"></div>
+            <div id="totalCarrinho"></div>
+        </div>
+      
         <ul>
             <li><a href="#pizza">Pizza</a></li>
             <li><a href="#pizzaBrotinho">Pizza\Brotinho</a></li>
@@ -284,16 +288,17 @@
 
             <div class="alinhamentoScrollPag" id="carrinho"></div>
 
+            
             <div class="entrega">
-           
+
                 <div class="carrinho">
-                
+
                     <h2>Carrinho</h2>
-                    <div class="displayCarrinhoInfo" id="itensCarrinho"></div>
-                    <div id="totalCarrinho"></div>
+
                     <div id="listaCarrinho"></div>
                 </div>
 
+                <div class="alinhamentoScrollPag" id="entrega"></div>
                 <h2>Formulário de Entrega</h2>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" placeholder="Nome" required>
@@ -326,14 +331,14 @@
 
         </div>
         <footer>
-           
+
 
             <div class="displayCarrinho">
                 <a href="#carrinho"><i class="fa-solid fa-cart-shopping"></i>Carrinho</a>
-                <a href="#"><i class="fa-solid fa-map-location-dot"></i>Entrega</a>
+                <a href="#entrega"><i class="fa-solid fa-map-location-dot"></i>Entrega</a>
             </div>
 
-            <p>Desenvolvido <sup>&copy;</sup> 2024 por Antolin A. Junior</p>
+            <p>Desenvolvido <sup>&copy;</sup> 2024 por Antolin_A_Junior</p>
         </footer>
 
         <script src="main.js"></script>
