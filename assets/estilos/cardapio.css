@@ -1,43 +1,45 @@
 .cardapio {
 
-    margin-top: 0;
+    margin-top: -200px;
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
+    gap: 50px;
 }
 
 .alinhamentoScrollPag {
-    margin-bottom: 250px;
+    margin-bottom: 350px;
 }
 
 .cardapio h1 {
     padding-top: 30px;
     margin-top: 90px;
     color: yellow;
-    border-top: solid 2px;
-    font-size: 100px;
+    font-size: 120px;
 }
 
 .cardapio span {
-    font-size: 60px;
+    font-size: 85px;
     margin-top: 100px;
 }
 
 .cardapio p {
-    font-size: 50px;
+    font-size: 60px;
     margin: 0;
 }
 
 .cardapio .botaoAdicionar {
-    width: 60%;
-    font-size: 30px;
+    background-color: rgb(0, 255, 0) ;
+    width: 55%;
+    font-size: 45px;
     border-radius: 30px;
-    height: 120px;
+    height: 180px;
     font-weight: bolder;
     box-shadow: 0px 0px 10px 1px yellow;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-top: 50px;
+    margin-bottom: 80px;
    
 }
 

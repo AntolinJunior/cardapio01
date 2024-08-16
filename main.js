@@ -28,7 +28,7 @@ function atualizarCarrinho() {
         `;
     });
 
-    document.getElementById('itensCarrinho').innerText = `ITENS: ${itemCarrinho}`;
+    document.getElementById('itensCarrinho').innerText = `ITENS ADICIONADOS: ${itemCarrinho}`;
     document.getElementById('totalCarrinho').innerText = `TOTAL: R$${total.toFixed(2)}`;
 }
 
